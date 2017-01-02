@@ -211,7 +211,13 @@ margin: 0.5em 0 0.15em 0;
 	margin-left: 2em;
 }
 
-
+#myrightcolumn {
+ margin: 15px 15px 15px 5px;
+ display: inline; /* IE Hack */
+ width: 240px;
+ float: right;
+ clear: right;
+}
 #centercolumn { /* Parent Wrapper for inside boxes */ 
  margin: 15px;
  display: inline; /* IE Hack */
