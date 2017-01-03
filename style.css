@@ -84,6 +84,11 @@ margin-bottom: 1em;
  padding-left: 0.3em;
  color: #0066CC;
 }
+#header h_backgroud {
+ padding-left: 0.3em;
+ color: #0066CC;
+}
+
 #header h1 a {
  font-weight: normal;
  text-decoration: none;
@@ -266,7 +271,19 @@ margin: 10px 0;
  border: 1px solid #ccc;
  border-top: none;
 }
-
+#footer_height {
+ float: left;
+ width: inherit;
+ font-size: 1.0em;
+ margin: 0 auto;
+ color:#333;
+ 
+ background: #ededed;
+ text-align: center;
+ border:#333333 thin solid;
+ border: 1px solid #ccc;
+ border-top: none;
+}
 /* ------------------------ End Footer -----------------*/
 
 /* ----- taken from http://rjohara.net/server/css-figures-captions/ ---- */
