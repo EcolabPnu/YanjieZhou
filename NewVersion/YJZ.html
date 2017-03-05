@@ -1,9 +1,76 @@
  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<script type="text/javascript">
+function onClickSelectPaperNOSCI()
+{
+ 
+var obj = document.forms[0].selectPaperNoSCI; 
+ 
+if(obj.checked)
+{
+var  tags = document.getElementsByTagName( "li" );
+	for(var i = 0; i < tags.length; i++){
+		if( tags[i].className  == "NO_SCI" )
+		{			
+			the_style = tags[i].style;
+			  the_style.display ="list-item" ;				
+		}
+	}	
+}else  
+{
+var  tags = document.getElementsByTagName( "li" );
+	for(var i = 0; i < tags.length; i++){
+		if( tags[i].className  == "NO_SCI" )
+		{			
+			the_style = tags[i].style;
+			the_style.display = "none" ;				
+		}
+	}	
+
+}
+
+
+}
+function onClickSelectPaperSCI()
+{
+ 
+var obj = document.forms[0].selectPaperSCI; 
+ 
+if(obj.checked)
+{
+var  tags = document.getElementsByTagName( "li" );
+	for(var i = 0; i < tags.length; i++){
+		if( tags[i].className  == "SCI" )
+		{			
+			the_style = tags[i].style;
+			  the_style.display ="list-item" ;				
+		}
+	}	
+}else  
+{
+var  tags = document.getElementsByTagName( "li" );
+	for(var i = 0; i < tags.length; i++){
+		if( tags[i].className  == "SCI" )
+		{			
+			the_style = tags[i].style;
+			the_style.display = "none" ;				
+		}
+	}	
+
+}
+ 
+}
+function init(){
+	 
+	document.all("selectPaperSCI").checked = true;
+	document.all("selectPaperNoSCI").checked = true;
+	 
+	
+}
+</script>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <Meta name="Kyewords" Lang="EN" Content="Yanjie Zhou,CIE46,Pusan National Univeristy,Best paper award,Zhengzhou Univeristy,Zhejiang Univeristy, Engineering and Computational Optimization Laboratory, Department of Industrial Engineering">
 　<Meta name="Kyewords" Lang="CN" Content="周艳杰,釜山大学，郑州大学，浙江大学，中国科学院大学，工业工程，计算机">
-
 
 <title>Yanjie Zhou's Homepage</title>
 <link type="text/css" rel="stylesheet" href="style1.css">
@@ -201,26 +268,32 @@ Transportation Network Modeling and Analysis <br>
   
   <div class="regular">
 <h1><a name="publication"></a>Publications</h1> 
+ <form action="" method="get"> 
+<label><input name="selectPaperSCI" type="checkbox" onclick = "onClickSelectPaperSCI()" value="" />SCI/SCIE/SSCI </label> 
+<label><input name="selectPaperNoSCI" type="checkbox" onclick = "onClickSelectPaperNOSCI()" value="" />NO-SCI </label> 
+</form> 
+<form action="" method="get"> 
 
- 
+</form> 
+
  <h2>2017</h2>    	
 			<ol>
 			 
-				  <li>
+				  <li class = "SCI">
                 <strong>
                 Linking the softcomputing to the art; k-continuous line drawing </strong><br /> 
                 <em><u><strong>Yanjie Zhou</strong></u>, Gyu M. Lee. </em><br />
                 Applied Soft Computing (SCI, IF 2.857)<font color="#00EC00">(Under review).</font>		
 				 
                 </li>
-				<li>
+				<li class = "SCI">
                 <strong>
                 A Lagrangian relaxation-based solution method for green vehicle routing problem to minimize greenhouse gas emissions.</strong><br /> 
                 <em><u><strong>Yanjie Zhou</strong></u>, Gyu M. Lee. </em><br />
-                Sustainability (SCI/SSCI, IF 1.343)<font color="#00EC00">(Under review).</font>				
+                Sustainability (SCIE/SSCI, IF 1.343)<font color="#00EC00">(Under review).</font>				
 				 
                 </li> 
-			<li>
+			<li class = "SCI">
                 <strong>
                 Handling data skew in MapReduce cluster by using partition tuning.</strong><br /> 
                 Yufei Gao, <em><u><strong>Yanjie Zhou</strong></u>,  Bing Zhou, Lei Shi, Jiacai Zhang. </em><br />
@@ -228,7 +301,7 @@ Transportation Network Modeling and Analysis <br>
 				 <font color="#00EC00">(Accepted).</font> <a href="../Paper/JHE2017.pdf" ><image src="../pdf.gif"  ></image></a>
 				 
                 </li>
-				 <li>
+				 <li class = "NO_SCI">
                 <strong>
             Design and implementation of segmentation algorithm for artistic drawing using 2-Axis computer numerical controller.</strong><br /> 			   
             Upendra M. Tuladhar, <em><u><strong>Yanjie Zhou</strong></u>, Gyu M. Lee, Seokyoung Ahn.	</em><br />
@@ -240,7 +313,7 @@ Transportation Network Modeling and Analysis <br>
             <h2>2016</h2>    	
             <ol>
 			
-               <li>
+               <li class = "NO_SCI">
                 <strong>
                 Linking the optimization to the art; an efficient k-continuous line drawing using image segmentation, stippling, and the traveling salesman problem.</strong><br /> 
                 <em><u><strong>Yanjie Zhou</strong></u>, Gyu M. Lee. </em><br />
@@ -248,7 +321,7 @@ Transportation Network Modeling and Analysis <br>
 				
                 </li>
 				 
-			 <li>
+			 <li class = "NO_SCI">
                <strong>
             Medical relief shelter location considering the severity of patients under limited relief budget.</strong><br /> 			   
             Jeongmin Gu, <em><u><strong>Yanjie Zhou</strong></u>, Gyu M. Lee.	</em><br />
@@ -261,23 +334,23 @@ Transportation Network Modeling and Analysis <br>
 		
 		 <h2>2015</h2>    
 				 <ol>
-				<li>
+				<li class = "NO_SCI">
                 <strong>
                 Interactive Mechanism Modeling From Multi-view Images.</strong><br /> 
                 <em><u><strong>Yanjie Zhou</strong></u> </em><br />
                 Master thesis (2015).
                 </li>  
 				
-				<li>
+				<li class = "NO_SCI">
                 <strong>
                 Calculation of perception motion estimation algorithm based on QoE control.</strong><br /> 
                 <em>ZHOU Bing,CHEN Chao-Jie,LV Pei,<u><strong>ZHOU Yan-Jie</strong></u>,WU Fei. </em><br />
                 The 24th National Conference on Multimedia Technology (NCMT), 2015.
-                </li>  
+                </li class = "NO_SCI">  
 				 </ol>
 		  <h2>2014</h2>    
 		   <ol>
-		   <li>
+		   <li class = "NO_SCI">
                 <strong>
                 Computation-aware motion estimation algorithm based on QoE control.</strong><br /> 
                 <em>Bing Zhou,<u><strong> Yanjie Zhou</strong></u>, Mingliang Xu,Fei Wu. </em><br />
@@ -323,7 +396,11 @@ Transportation Network Modeling and Analysis <br>
 </div>
 </div>
 
- 
+ <script>
+<!--
+init();
+-->
+</script>
    
 
 </body>
