@@ -345,7 +345,18 @@ margin: 10px 0;
 	background:#D3D3D3;
 	vertical-align: text-top;
 }
-
+.JounalName
+{	
+	font-family: arial;	 
+	font-size: 14px;
+	font-style:italic;
+	line-height:16px;
+	text-align:center;
+	display: inline-block;
+	/*color:#FFFFFF;
+	background:#696969;*/
+	vertical-align: text-top;
+}
 
 /* ------------------------ Start Footer -----------------*/
 #footer {
