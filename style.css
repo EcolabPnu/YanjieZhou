@@ -5,9 +5,9 @@
 }
 body {
  font-family: verdana, arial, helvetica, sans-serif;
- font-size: 76%;/* font sizing in ems, baby. if you want to change anything, just change this.*/
+ font-size: 100%;/* font sizing in ems, baby. if you want to change anything, just change this.*/
  color: #666666;
- font-size: 12px;
+ font-size: 15px;
  text-align: left;
  background-repeat:repeat;
  
